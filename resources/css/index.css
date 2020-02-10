@@ -478,7 +478,7 @@ h1 {
 
 .seperator {
   background-color: black;
-  background-image: url("../images/seperator.svg");
+  background-image: url("../images/Seperator.svg");
   height: 100px;
   background-size: cover;
   background-position-x: center;
@@ -553,7 +553,7 @@ h1 {
 /* contact css */
 
 #contact {
-  background-image: linear-gradient(180deg,rgba(255,255,255,0.9) 0%,#ffffff 100%), url("../images/contactPicture.jpg");
+  background-image: linear-gradient(180deg,rgba(255,255,255,0.9) 0%,#ffffff 100%), url("../images/contactpicture.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
