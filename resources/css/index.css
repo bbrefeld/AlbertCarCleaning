@@ -1,0 +1,992 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,700|Teko&display=swap');
+
+html {
+  font-size: 18px;
+}
+
+.container {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.underline {
+  width: 50px;
+  height: 2px;
+  background-color: yellow;
+  margin: 2.5rem 0px 3.5rem 0px;
+}
+
+:target {
+  visibility: hidden;
+}
+
+
+/* Begin Header opmaak */
+
+header {
+  background-image: linear-gradient(180deg,#000000 7%,rgba(0,0,0,0) 100%), url("../images/headerFoto.jpeg");
+  width: 100%;
+  height: 56.25vw; /* Gebaseerd op aspect ratio van afbeelding */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+}
+
+
+
+/* Begin navigatie opmaak */
+
+nav, ul, li a, li a img {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  position: fixed;
+  max-height: 3rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+ul label, ul input {
+  display: none;
+}
+
+#menu {
+  width: 30rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: Cabin;
+}
+
+#menu a {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  text-decoration: none;
+}
+
+#menu a:hover {
+  color: lightblue;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#logo {
+  width: 12rem;
+  padding-top: 1rem;
+}
+
+/* end nav css */
+
+
+
+#headerFoto {
+  width: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+h1 {
+  width: 80%;
+  letter-spacing: 0.3vw;
+  font-size: 5vw;
+  text-transform: uppercase;
+  font-family: Teko;
+}
+
+#headerFoto p {
+  width: 100%;
+  font-family: Teko;
+  font-size: 2vw;
+  letter-spacing: 0.02rem;
+  margin-top: 1vw;
+}
+
+/* end header css */
+
+
+
+
+
+
+
+
+/* start main css */
+
+/* over ons css */
+
+#overons {
+  width: 100%;
+  padding: 4rem 0px;
+  background-color: #19181A;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: Teko;
+}
+
+#overons .container {
+  width: 40%;
+  max-width: 1050px;
+}
+
+#overons h2 {
+  font-size: 2.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+#overons .p_split {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#overons p {
+  font-family: Cabin;
+  width: 45%;
+  letter-spacing: 0.1rem;
+  line-height: 1.2rem;
+  color: #777;
+}
+
+/* end over ons css */
+
+
+
+
+
+
+/* content 1 css */
+
+#content1 {
+  background-image: url("../images/content1-foto.jpeg");
+  width: 100%;
+  height: 60rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  font-family: Cabin;
+}
+
+#content1 .container {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-start;
+}
+
+#content1 .container div {
+  width: 20rem;
+  min-height: 15rem;
+  margin-top: 6rem;
+  color: white;
+  background-color: rgba(33,33,33,0.56);
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+#content1 h2 {
+  font-size: 2.5rem;
+}
+#content1 p {
+  letter-spacing: 0.1rem;
+  line-height: 1.6rem;
+  width: 20rem;
+  font-family: Cabin;
+}
+
+/* end content 1 css */
+
+
+
+
+
+
+/* content 2 css */
+
+#content2 {
+  width: 100%;
+  height: 60rem;
+  font-family: Cabin;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#content2 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#content2 p {
+  letter-spacing: 0.1rem;
+  line-height: 1.6rem;
+  width: 18rem;
+  font-family: Cabin;
+}
+
+#content2a {
+  width: 35%;
+  height: 100%;
+  background-image: url("../images/content2a-foto.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+#content2b {
+  width: 65%;
+  height: 100%;
+  background-image: url("../images/content2b-foto.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#content2 div {
+  width: 18rem;
+  height: 18rem;
+  color: white;
+  background-color: rgba(33,33,33,0.56);
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+#content2a div {
+  margin-bottom: 6rem;
+  margin-left: 6rem;
+}
+
+#content2b div {
+  margin-top: 6rem;
+  margin-left: 6rem;
+}
+
+/* end content2 css */
+
+
+
+
+
+
+
+/* paketten css */
+
+#pakketten {
+  background-image: radial-gradient(circle at center,#000000 0%,#3a3a3a 100%);
+  padding-top: 8rem;
+  font-family: Teko;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 46rem;
+  overflow: visible;
+  margin-bottom: 9rem;
+}
+
+#pakketten #pakketTitel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#pakketTitel p {
+  margin-bottom: 4rem;
+  width: 100%;
+  text-align: center;
+}
+
+#pakketten h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  width: 100%;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+#pakketten p {
+  font-family: Cabin;
+}
+
+#pakketten a {
+  text-decoration: none;
+}
+
+#allPackages {
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: black;
+}
+
+#allPackages h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#allPackages p {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#allPackages .price {
+  width: 100%;
+  text-align: center;
+  margin: 3rem 0px;
+}
+
+#allPackages .price span {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+#allPackages ul {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: bold;
+}
+
+#allPackages li {
+  width: 80%;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: Cabin;
+}
+
+#allPackages div div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 2px;
+  margin-bottom: 2rem;
+}
+
+#allPackages div div span {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  text-align: center;
+  padding: 0.65rem 1rem 0.5rem 1rem;
+  display: table-cell;
+  vertical-align: bottom;
+  border: 2px solid white;
+}
+
+#allPackages div div span:hover {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#platinumPackage, #goldPackage, #silverPackage {
+  background-color: white;
+  box-shadow: 0px 2px 40px 0px rgba(0,0,0,0.1);
+  display: inline-flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  flex-flow: column;
+}
+
+#platinumPackage {
+  height: 100%;
+  width: 33.3333333333%;
+}
+
+#platinumPackage .price span {
+  color: #95aec1;
+}
+
+#goldPackage {
+  height: 80%;
+  width: 33.3333333333%;
+}
+
+#goldPackage .price span {
+  color: #d8c40f;
+}
+
+#silverPackage {
+  height: 80%;
+  width: 33.3333333333%;
+}
+
+#silverPackage .price span {
+  color: #707070;
+}
+
+/* end pakketten css */
+
+
+
+
+
+
+/* seperator css */
+
+.seperator {
+  background-color: black;
+  background-image: url("../images/seperator.svg");
+  height: 100px;
+  background-size: cover;
+  background-position-x: center;
+}
+
+/* end seperator css
+
+
+
+
+/* pakkettenfoto's css */
+
+#pakkettenfotos {
+  padding-top: 0.5rem;
+  background-color: black;
+  color: white;
+  height: 30rem;
+  display: flex;
+}
+
+#pakkettenfotos div {
+  width: 33.333333%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+
+#pakkettenfotos h3 {
+  color: white;
+  font-size: 3rem;
+  font-family: Teko;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 2rem;
+}
+
+#pakkettenfotos p {
+  color: rgba(255,255,255,0.4);
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+#silverPicture {
+  background-image: linear-gradient(180deg,rgba(0,0,0,0) 20%,rgba(0,0,0,0.9) 100%), url("../images/silverPicture.jpeg");
+  background-position: top;
+}
+
+#platinumPicture {
+  background-image: linear-gradient(180deg,rgba(0,0,0,0) 20%,rgba(0,0,0,0.9) 100%), url("../images/platinumPicture.jpeg");
+  background-position: top;
+}
+
+#goldPicture {
+  background-image: linear-gradient(180deg,rgba(0,0,0,0) 20%,rgba(0,0,0,0.9) 100%), url("../images/goldPicture.jpeg");
+  background-position: center;
+}
+
+/* end pakkettenfotos css */
+
+
+
+
+
+
+/* contact css */
+
+#contact {
+  background-image: linear-gradient(180deg,rgba(255,255,255,0.9) 0%,#ffffff 100%), url("../images/contactPicture.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+#contact .container {
+  width: 75%;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+#contact h2 {
+  font-size: 5rem;
+  font-family: Teko;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+#contact p {
+  padding-left: 4rem;
+}
+
+#contactHeader {
+  margin-top: 4rem;
+  width: 50%;
+}
+
+#contactInfo {
+  margin-top: 2.6rem;
+  width: 40%;
+  background-image: linear-gradient(190deg,#C2BC0C 85%,rgba(255,255,255,0) 0%);
+  color: white;
+  padding-left: 2rem;
+  padding-bottom: 7rem;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+#contactInfo span {
+  display: block;
+  font-weight: bold;
+}
+
+.contactHeader {
+  font-size: 1.5rem;
+  font-family: Teko;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  margin-top: 1.4rem;
+}
+
+#contactInfo tr {
+  height: 1.5rem;
+  font-weight: bold;
+}
+
+#contactInfo tr td:first-child {
+  padding-right: 0.5rem;
+}
+
+#contactInfo a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+}
+
+#contactInfo a:hover {
+  text-decoration: underline;
+  color: lightblue;
+}
+
+/* end contact css */
+
+
+
+
+
+
+/* start footer css */
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  background-color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer span {
+  padding-left: 2rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #777;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+/* end footer css */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* first break */
+
+@media only screen and (max-width: 1230px) {
+
+  .container {
+    width: 95%;
+  }
+
+  nav {
+    justify-content: space-around;
+  }
+
+  ul {
+    justify-content: space-around;
+  }
+
+  #logo {
+    width: 10rem;
+  }
+
+  #headerFoto p {
+    font-size: 1rem;
+  }
+
+  #overons .container {
+    width: 95%;
+  }
+
+  #overons p {
+    width: 47.5%;
+  }
+
+  #content1 {
+    height: 30rem;
+  }
+
+  #content1 .container {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  #content1 .container div {
+    margin-left: 6rem;
+  }
+
+  #content2 {
+    height: 60rem;
+  }
+
+  #content2a, #content2b {
+    width: 100%;
+    height: 50%;
+  }
+
+  #content2a {
+    justify-content: flex-end;
+  }
+
+  #content2a div {
+    margin-left: 0rem;
+    margin-right: 6rem;
+  }
+
+}
+
+
+
+
+
+/* second break */
+
+@media only screen and (max-width: 800px) {
+
+  .underline {
+    margin: 1rem 0px;
+  }
+
+  header {
+    background-image: none;
+    height: auto;
+  }
+
+  #headerFoto {
+    background-image: linear-gradient(180deg,#000000 1%,rgba(0,0,0,0) 100%), url("../images/headerFoto.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 56.25vw;
+  }
+
+  #headerFoto h1 {
+    font-size: 2.5rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  nav ul #menu {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  #menu a {
+    justify-content: center;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  #overons .p_split {
+    flex-wrap: wrap;
+  }
+
+  #overons p {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  #content1 .container div {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 2.5%;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  #content1 .container div h2 {
+    margin-bottom: 1rem;
+  }
+
+  #content1 p {
+    width: 80%;
+  }
+
+  #content2a div, #content2b div {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 2.5%;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  #content2a p, #content2b p {
+    width: 80%;
+  }
+
+  #pakketTitel p {
+    margin-bottom: 2rem;
+  }
+
+  #pakketten {
+    padding-top: 2rem;
+    height: auto;
+    margin-bottom: 0px;
+  }
+
+  #allPackages {
+    flex-wrap: wrap;
+    height: auto;
+    flex-direction: column;
+  }
+
+  #allPackages .price {
+    margin: 1rem 0px;
+  }
+
+  #allPackages li {
+    margin-bottom: 0.5rem;
+  }
+
+  #allPackages ul {
+    padding-bottom: 1rem;
+  }
+
+  #platinumPackage, #goldPackage, #silverPackage {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  #silverPackage {
+    order: 1;
+  }
+
+  #goldPackage {
+    order: 2;
+  }
+
+  #platinumPackage {
+    order: 3;
+  }
+
+  .seperator {
+    display: none;
+  }
+
+  #pakkettenfotos {
+    display: none;
+  }
+
+  #contactHeader {
+    width: 100%;
+  }
+
+  #contactInfo {
+    width: 100%;
+  }
+
+}
+
+
+
+/* Thrid break */
+
+@media only screen and (max-width: 800px) {
+
+  :target {
+    display: block;
+    position: relative;
+    top: -6.1rem;
+  }
+
+  #menu {
+    flex-wrap: wrap;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+  }
+
+  #menu li {
+    margin: 0.5rem 0px;
+  }
+
+  #logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 0rem;
+  }
+
+  #logo a, #logo img {
+    width: 180px;
+  }
+
+  #headerFoto {
+    margin-top: 6.1rem;
+  }
+
+  ul input {
+    display: none;
+  }
+
+  ul label {
+    color: white;
+    display: block;
+  }
+
+  ul label:hover {
+    cursor: pointer;
+  }
+
+  nav {
+    max-height: none;
+  }
+
+  nav input:checked ~ label span:last-child {
+    display:none;
+  }
+
+  nav input:not(:checked) ~ label span:first-child {
+   display:none;
+  }
+
+  nav input:checked ~ #menu {
+    max-height: 11rem;
+    transition: max-height 0.5s ease-out;
+  }
+
+}
+
+
+
+
+/* fourth break */
+
+@media only screen and (max-width: 500px) {
+
+  html {
+    font-size: 16px;
+  }
+
+  #headerFoto h1 {
+    font-size: 2rem;
+  }
+
+  footer {
+    flex-wrap: wrap;
+  }
+
+  footer a {
+    margin: 0.5rem 0px;
+  }
+
+}
