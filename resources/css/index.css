@@ -778,7 +778,6 @@ footer a:hover {
 
   nav ul #menu {
     width: 100%;
-    margin-bottom: 1rem;
   }
 
   #menu a {
@@ -894,18 +893,10 @@ footer a:hover {
     width: 100%;
   }
 
-}
-
-
-
-/* Thrid break */
-
-@media only screen and (max-width: 800px) {
-
   :target {
     display: block;
     position: relative;
-    top: -6.1rem;
+    top: -2.5rem;
   }
 
   #menu {
@@ -927,11 +918,11 @@ footer a:hover {
   }
 
   #logo a, #logo img {
-    width: 180px;
+    width: 120px;
   }
 
   #headerFoto {
-    margin-top: 6.1rem;
+    margin-top: 2.5rem;
     height: 25rem;
     background-position: right 30% top 50%;
   }
@@ -942,6 +933,14 @@ footer a:hover {
 
   ul label {
     color: white;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    position: absolute;
+    left: 2.5%;
+  }
+
+  #nav-button {
     display: block;
   }
 
@@ -959,6 +958,11 @@ footer a:hover {
 
   nav input:not(:checked) ~ label span:first-child {
    display:none;
+  }
+
+  nav input:checked ~ label span:first-child {
+    position: relative;
+    top: -5rem;
   }
 
   nav input:checked ~ #menu {
